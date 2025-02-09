@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="GOOD girl.jpg">
+    <style>
+        body {
+            background-color: rgb(251, 251, 251);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+         h1,h2,p, form, ol, li, button {
+            text-align: center;
+        }
+                section{
+            height: 100vh; /* Each section takes full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        #welcome{
+            background-color: #e6ffe6;
+        }
+        #about{
+            background-color: #ffefdb;
+        }
+        #skills{
+            background-color:#ffe6e6;
+        }
+        #projects{
+            background-color: #ffffcc;
+        }
+        #contact{
+            background-color: #f0f8ff;
+        }
+        
+        #skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            text-align: left;
+            padding: 1px;
+            font-size: 18px;
+            margin: 2px 0;
+        }
+        nav{
+           position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a{
+        color:white;
+        text-decoration: dotted;
+        margin: 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav a:hover{
+        color:yellow;
+    }
+    nav a:visited{
+        color:goldenrod;
+    }
+        table, tr, th, td {
+            text-align: center;
+            border-style: double;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <a href="#welcome">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+   </nav>
+
+    <header>
+         <section id="welcome">
+        <h1 style="font-size:50px;">Welcome to My Portfolio</h1>
+        <p style="font-size:30px;font-color:rgba(200,0,0,0)">Scroll Down to Explore!</p>
+</section>
+    </header>
+
+
+    <main>
+
+        <section id="about">
+            <h1>Sai Ankitha Pogula</h2>
+            <img src="C:\Users\91824\Documents\My Portfolio\Ankitha.jpg" alt="Ankitha's Photo" style="max-width: 200px; border-radius: 10%; margin: 10px auto; display: block;">
+            <p>
+                Enthusiastic Information Technology student with a strong grasp of software development, data structures, and algorithms.<br>
+                I am currently pursuing my 3rd year of BTech in <i>Velagapudi Ramakrishna Siddhartha Engineering College</i>.<br>
+                Engaged in coding competitions and hackathons, with hands-on experience in developing web applications.
+            </p>
+        </section>
+
+
+        <section id="skills">
+            <h1>My Skills</h1>
+                <ul>
+                <li>C Language Basics</li>
+                <li>Python Basics</li>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>DBMS Basics</li>
+                </ul>
+        </section>
+
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Using</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>RFID Blocking</td>
+                    <td>Python, Selenium, Google Cloud Console</td>
+                    <td>
+                        An RFID Blocking project in cybersecurity prevents unauthorized access to RFID-enabled cards by blocking electromagnetic signals.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chilli Plant Disease Detection using CNN in Deep Learning</td>
+                    <td>Python, TensorFlow, Google Colab</td>
+                    <td>
+                        Developed and trained a CNN using EfficientNet B4 to accurately classify diseases in chili plants, achieving 96.51% accuracy.<br>
+                        Enabled image uploads in Google Colab for quick disease predictions.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section id="contact">
+            <h1 style="color:black;">Contact Me</h1>
+            <form>
+                 <label for="name">Name:</label>
+        <input type="text" id="Name" name="Name"><br><br>
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email"><br><br>
+        <b>Choose your gender:<b>
+        <input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label><br><br>
+        <label for="bio">Bio (up to 200 characters):</label>
+        <input type="text"><br><br>
+        <button type="submit">Submit</button>
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
